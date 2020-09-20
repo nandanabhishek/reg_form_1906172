@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+
+  <style>
+
+
+  .a{
+    text-align:center;
+    margin:8px 30px 8px 30px;
+    background-color:paleturquoise;
+    border-radius:  40px;
+    border:5px outset grey;
+    font-family: Helvetica;
+    font-size:20px;
+
+  }
+
+  .b{
+    text-align:center;
+    margin:8px 30px 8px 30px;
+    background-color:aquamarine;
+    border-radius: 40px;
+    border:5px outset grey;
+    font-family: Helvetica;
+    font-size:20px;
+
+  }
+
+  .c{
+    text-align:center;
+    margin:8px 30px 8px 30px;
+    background-color:skyblue;
+    border-radius:  40px;
+    border:5px outset grey;
+    font-family: Helvetica;
+    font-size:20px;
+
+  }
+
+  .d{
+    text-align:center;
+    margin:8px 30px 15px 30px;
+    background-color:lightpink;
+    border-radius:  40px;
+    border:5px outset grey;
+    font-family: Helvetica;
+    font-size:20px;
+
+  }
+
+  .e{
+    text-align:center;
+  }
+
+
+
+  </style>
+</head>
+<body style="background-color:bisque;">
+
+  <h1 style="text-align:center;font-family:cursive;font-size:40px;"><i>National Institute of Technology, Patna</i></h1>
+  <hr style="height:3px;margin-left:290px;margin-right:290px; border-width: 2px;">
+  <hr style="height:3px;margin-left:250px;margin-right:250px; border-width: 2px;">
+
+  <h1 style="text-align:center;font-family:Verdana;font-size:35px;"><u>Registration Form </u></h1>
+
+<form>
+
+<div class="a">
+  <h2>Basic Details</h2>
+
+  <label for="firstname">Firstname :</label>
+  <input type="text" name="firstname"  maxlength="10" required>
+
+
+  <label for="lastname">Lastname :</label>
+  <input type="text" name="lastname"   maxlength="10" required>
+  <br><br>
+
+
+  <label for="rollno">Roll No :</label>
+  <input type="text" name="rollno"  maxlenght="6" required>
+  <br><br>
+
+  <label for="dob">D.O.B :</label>
+  <input type="date" name="birthday"  min="1998-01-01" required>
+  <br><br>
+
+  <label for="gender">Gender :</label>
+  <input type="radio" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" name="gender" value="other">
+  <label for="other">Other</label>
+  <br><br>
+
+  <label for="category">Category :</label>
+        <select name="category" value="category" >
+            <option value="general">General</option>
+            <option value="gen-ews">Gen-EWS</option>
+            <option value="obc" selected>OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+        </select>
+        <br><br>
+
+  <label for="pwd">PWD :</label>
+        <input type="radio" name="pwd" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="pwd" value="no">
+        <label for="no">No</label>
+        <br><br>
+
+</div>
+
+<div class="b">
+  <h2>Contact Details</h2>
+  <label> Phone :</label>
+  <input type="text" name="country code"  value="+91" size="2" required/>
+  <input type="text" name="phone"  maxlength="10" required>
+  <br> <br>
+
+  <label>Email :<label>
+  <input type="text"  size="30" maxlength="30" required>
+  <br> <br>
+
+
+
+  <label for="address">Address : </label>
+  <textarea cols="60" rows="5" name="address"  required/ >
+  </textarea>
+  <br> <br>
+
+  <label>Pincode :</label>
+  <input type="text" name="pincode"  maxlength="6" required/> <br> <br>
+</div>
+
+ <div class="c">
+  <h2>Academic Details</h2>
+
+  <label>Course :</label>
+  <select>
+  <option value="BTech" selected>BTech</option>
+  <option value="BArch">BArch</option>
+  <option value="IMSc">IMSc</option>
+  <option value="MTech">MTech</option>
+  <option value="PHd">PHd</option>
+  </select>
+  <br><br>
+
+
+  <label>Branch :</label>
+  <select>
+  <option value="CSE" selected>CSE</option>
+  <option value="ECE">ECE</option>
+  <option value="EE">EE</option>
+  <option value="ME">ME</option>
+  <option value="CE">CE</option>
+  <option value="M.Sc Chem.">M.Sc Chem.</option>
+  <option value="M.Sc Phy.">M.Sc Phy.</option>
+  <option value="M.Sc Maths">M.Sc Maths</option>
+  </select>
+
+  <label>Semester :</label>
+  <select>
+  <option value="I">I</option>
+  <option value="II">II</option>
+  <option value="III" selected>III</option>
+  <option value="IV">IV</option>
+  <option value="V">V</option>
+  <option value="VI">VI</option>
+  <option value="VII">VII</option>
+  <option value="VIII">VIII</option>
+  </select>
+  <br><br>
+
+  <label>SGPA :</label>
+  <input type="text" name="SGPA" size="4" required>
+  <label>CGPA :</label>
+  <input type="text" name="CGPA" size="4"/><br><br>
+
+  <label>Backlog :</label>
+  <input type="radio"  name="backlog" value="yes"> Yes
+  <input type="radio" name="backlog" value="no">No
+   <br><br>
+
+   <label>
+   Hostel Accomodation :
+   </label>
+   <input type="radio"  name="hostel" value="yes"> Yes
+   <input type="radio"  name="hostel" value="no">No
+    <br><br>
+  </div>
+
+
+<div class="d">
+    <h2>Account Details (For refund, if any)</h2>
+    <label for="accountholder">Account Holder Name :</label>
+    <input type="text" name="accountholder" maxlength="30"  ><br><br>
+    <label for="accountno">Account No. :</label>
+    <input type="text" name="accountno" maxlength="12" ><br><br>
+    <label for="ifsc">IFSC Code :</label>
+    <input type="text" name="ifsc" maxlength="12"><br><br>
+    <label for="bankname">Bank Name :</label>
+    <input type="text" name="bankname" maxlength="30" ><br><br>
+    <label for="branchname">Branch Name :</label>
+    <input type="text" name="branchname" maxlength="30" size="30" ><br><br>
+
+</div>
+
+
+<div class="e">
+
+  <input type="submit" value="Submit" style="background-color:red;color:white;font-size:30px;font-family:sherif;">
+
+</div>
+
+</form>
+
+</body>
+</html>
